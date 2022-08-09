@@ -58,6 +58,18 @@
   margin-bottom: 0px;
   margin-top: 0px; */
 }
+.homepage .left-column .title-main {
+  background: rgba(224, 50, 50, 0.185);
+}
+.homepage .left-column .title-secondary {
+  background: rgba(223, 6, 194, 0.795);
+}
+.homepage .left-column .checkbox-item {
+  background: rgba(211, 85, 26, 0.644);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
 .homepage .category-item {
   display: flex;
   justify-content: space-between;
