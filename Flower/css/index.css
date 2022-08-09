@@ -1,10 +1,11 @@
 .container {
-  padding: 100px 90px;
 }
 .homepage {
+  font-family: 'Muli', serif;
 }
 .homepage .heading-section {
   background: rgba(33, 47, 55, 0.518);
+  font-family: 'Lora', serif;
   padding: 62px 200px 80px 200px;
   text-align: center;
   color: white;
@@ -39,22 +40,21 @@
   line-height: 22px;
 }
 .homepage .flower-content-section {
+  padding: 20px 190px;
   margin-top: 45px;
   margin-bottom: 66px;
   display: flex;
   gap: 30px;
 }
 .homepage .left-column {
-  padding: 20px;
-  width: 13%;
-  border: 1px solid #e5e5e5;
 }
 .homepage .category {
+  border: 1px solid gray;
+  padding: 30px;
 }
 .homepage .category-title {
-}
-.homepage .category-title p {
   padding-bottom: 12px;
+  font-weight: 700;
   border-bottom-width: 1px;
   border-color: #e5e5e5;
   border-bottom-style: solid;
@@ -77,16 +77,30 @@
 }
 .homepage .price {
 }
+.homepage .price .price-range {
+  display: flex;
+  gap: 1rem;
+}
 .homepage .product-type {
 }
 .homepage .brand {
 }
 .homepage .color {
 }
+.homepage .color .color-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+.homepage .color .color-item {
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 100%;
+}
 .homepage .size {
 }
 .homepage .right-flower-list {
-  width: 87%;
+  width: 80%;
 }
 .homepage .filter-product {
   display: flex;
@@ -115,31 +129,48 @@
 }
 .homepage .flower-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  background-color: rgba(68, 0, 255, 0.144);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+  /* background-color: rgba(68, 0, 255, 0.144); */
 }
 .homepage .flower-item {
-
+  text-align: center;
 }
 .homepage .flower-thumbnail {
 }
 .homepage .flower-thumbnail img {
   height: auto;
   max-width: 100%;
-
 }
 .homepage .flower-name {
 }
+.homepage .flower-name p {
+  font-size: 16px;
+}
 .homepage .flower-rating {
 }
+.homepage .flower-rating .fa-star {
+  color: #d6d6d6;
+}
 .homepage .flower-price {
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  color: #666;
+  justify-content: center;
+  gap: 1rem;
 }
 .homepage .original-price {
+  color: #c34795;
+  font-weight: 500;
 }
 .homepage .discount-price {
+  text-decoration: line-through;
 }
 .homepage .pagination {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: end;
 }
 .homepage .page-number {
 }
