@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
   <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
@@ -39,8 +40,8 @@
       <div class="flower-content-section">
         <!-- Begin of left filter flower  -->
         <div class="left-column">
-          <div class="category">
-              <p class="category-title">SHOP BY CATEGORIES</p>
+          <div class="category border-style">
+              <p class="title-main">SHOP BY CATEGORIES</p>
             <div class="category-item">
               <div class="category-name">Home</div>
               <div class="add-button">+</div>
@@ -78,63 +79,94 @@
               <div class="add-button">+</div>
             </div>
           </div>
-          <div class="filter-by">
-            <p class="title-filter-by">
+          <div class="filter-by border-style">
+            <p class="title-main">
               FILTER BY
             </p>
             <div class="availability">
-              <div class="title">
+              <div class="title-secondary">
                 <p>Availability</p>
               </div>
-              <input type="checkbox" name="in-stock">
-              <label> In stock (18)</label><br>
-              <input type="checkbox" name="out-of-stock">
-              <label> Out of stock</label><br>
+              <div class="availability-item checkbox-item">
+                <input type="checkbox" name="in-stock">
+                <label> In stock (18)</label><br>
+              </div>
+              <div class="availability-item checkbox-item">
+                <input type="checkbox" name="out-of-stock">
+                <label> Out of stock</label><br>
+              </div>
             </div>
             <div class="price">
-              <p class="title-price">Price</p>
+              <p class="title-secondary">Price</p>
               <div class="price-range">
-                <label>$</label>
-                <input type="text" name="price-from" placeholder="From">
-                <label>$</label>
-                <input type="text" name="price-to" placeholder="To">
+                <div class="price-item">
+                  <label>$</label>
+                  <input type="text" name="price-from" placeholder="From">
+                </div>
+                <div class="price-item">
+                  <label>$</label>
+                  <input type="text" name="price-to" placeholder="To">
+                </div>
               </div>
             </div>
             <div class="product-type">
-              <p class="product-type-title">
+              <p class="title-secondary">
                 Product Type
               </p>
               <div class="product-type-list">
-                <input type="checkbox">
-                <label>Accessories (3)</label><br>
-                <input type="checkbox">
-                <label>Bags (3)</label><br>
-                <input type="checkbox">
-                <label>Blouse (1)</label><br>
-                <input type="checkbox">
-                <label>Clothing (5)</label><br>
-                <input type="checkbox">
-                <label>Hot (4)</label><br>
+                <div class="product-type-item checkbox-item">
+                  <input type="checkbox">
+                  <label>Accessories (3)</label><br>
+                </div>
+                <div class="product-type-item checkbox-item">
+                  <input type="checkbox">
+                  <label>Bags (3)</label><br>
+                </div>
+                <div class="product-type-item checkbox-item">
+                  <input type="checkbox">
+                  <label>Blouse (1)</label><br>
+                </div>
+                <div class="product-type-item checkbox-item">
+                  <input type="checkbox">
+                  <label>Clothing (5)</label><br>
+                </div>
+                <div class="product-type-item checkbox-item">
+                  <input type="checkbox">
+                  <label>Hot (4)</label><br>
+                </div>
               </div>
             </div>
             <div class="brand">
-              <p class="brand-title">
+              <p class="title-secondary">
                 Brand
               </p>
               <div class="brand-list">
-                <input type="checkbox">
-                <label>Bloomgenix (5)</label><br>
-                <input type="checkbox">
-                <label>Bloomverse (5)</label><br>
-                <input type="checkbox">
-                <label>Blossomzoid (3)</label><br>
-                <input type="checkbox">
-                <label>FloraDeck (5)</label><br>
-                <input type="checkbox">
-                <label>Flowerhut (5)</label><br>
+                <div class="brand-item checkbox-item">
+                  <input type="checkbox">
+                  <label>Bloomgenix (5)</label><br>
+                </div>
+                <div class="brand-item checkbox-item">
+                  <input type="checkbox">
+                  <label>Bloomverse (5)</label><br>
+                </div>
+                <div class="brand-item checkbox-item">
+                  <input type="checkbox">
+                  <label>Blossomzoid (3)</label><br>
+                </div>
+                <div class="brand-item checkbox-item">
+                  <input type="checkbox">
+                  <label>FloraDeck (5)</label><br>
+                </div>
+                <div class="brand-item checkbox-item">
+                  <input type="checkbox">
+                  <label>Flowerhut (5)</label><br>
+                </div>
               </div>
             </div>
             <div class="color">
+              <p class="title-secondary">
+                Color
+              </p>
               <div class="color-list">
                 <div class="color-item" style="background-color: black;"></div>
                 <div class="color-item" style="background-color: blue;"></div>
@@ -148,14 +180,22 @@
               </div>
             </div>
             <div class="size">
-              <p class="size-title">Size</p>
+              <p class="title-secondary">
+                Size
+              </p>
               <div class="size-list">
-                <input type="checkbox">
-                <label>S (5)</label><br>
-                <input type="checkbox">
-                <label>M (5)</label><br>
-                <input type="checkbox">
-                <label>L (5)</label><br>
+                <div class="size-item checkbox-item">
+                  <input type="checkbox">
+                  <label>S (5)</label><br>
+                </div>
+                <div class="size-item checkbox-item">
+                  <input type="checkbox">
+                  <label>M (5)</label><br>
+                </div>
+                <div class="size-item checkbox-item">
+                  <input type="checkbox">
+                  <label>L (5)</label><br>
+                </div>
               </div>
             </div>
           </div>
@@ -303,10 +343,10 @@
       <!-- Begin of pagination -->
       <div class="pagination">
         <div class="page-number">
-          <button>1</button>
+          <button class="active">1</button>
         </div>
         <div class="page-number">
-          <button>1</button>
+          <button>2</button>
         </div>
       </div>
       <!-- End of pagination -->
