@@ -6,13 +6,11 @@
 .homepage .heading-section {
   background: rgba(33, 47, 55, 0.518);
   font-family: 'Lora', serif;
-  padding: 62px 200px 80px 200px;
   text-align: center;
   color: white;
   position: relative;
 }
 .homepage .background {
-  height: 80px;
 }
 .homepage .background img {
   width: 100%;
@@ -40,7 +38,6 @@
   line-height: 22px;
 }
 .homepage .flower-content-section {
-  padding: 20px 190px;
   margin-top: 45px;
   margin-bottom: 66px;
   display: flex;
@@ -49,17 +46,17 @@
 .homepage .left-column {
 }
 .homepage .category {
-  border: 1px solid gray;
-  padding: 30px;
+  /* border: 1px solid gray;
+  padding: 30px; */
 }
 .homepage .category-title {
-  padding-bottom: 12px;
+  /* padding-bottom: 12px;
   font-weight: 700;
   border-bottom-width: 1px;
   border-color: #e5e5e5;
   border-bottom-style: solid;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 0px; */
 }
 .homepage .category-item {
   display: flex;
@@ -107,6 +104,7 @@
   justify-content: space-between;
 }
 .homepage .dropdown-menu {
+  margin-bottom: 20px;
 }
 .homepage .dropdown-menu select {
   padding-top: 10px;
@@ -146,6 +144,8 @@
 }
 .homepage .flower-name p {
   font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 12px;
 }
 .homepage .flower-rating {
 }
@@ -155,14 +155,18 @@
 .homepage .flower-price {
   display: flex;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #666;
   justify-content: center;
   gap: 1rem;
 }
+.homepage .flower-price p {
+  margin-top: 12px;
+}
 .homepage .original-price {
   color: #c34795;
-  font-weight: 500;
+  
+  font-weight: 600;
 }
 .homepage .discount-price {
   text-decoration: line-through;
