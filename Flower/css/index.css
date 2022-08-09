@@ -30,6 +30,9 @@
   color: #ffff;
   text-decoration: none;
 }
+.homepage .pt-20px {
+  padding-top: 20px;
+}
 .homepage .title {
   font-size: 18px;
 }
@@ -43,11 +46,17 @@
   display: flex;
   gap: 30px;
 }
-.homepage .left-column {
+.homepage .left-column .list-box {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding: 0 20px 30px 20px;
 }
-.homepage .category {
-  /* border: 1px solid gray;
-  padding: 30px; */
+.homepage .left-column .category {
+
+}
+.homepage .left-column .category-item {
+  display: flex;
+  justify-content: space-between;
 }
 .homepage .category-title {
   /* padding-bottom: 12px;
@@ -64,7 +73,7 @@
 .homepage .left-column .title-secondary {
   background: rgba(223, 6, 194, 0.795);
 }
-.homepage .left-column .checkbox-item {
+.homepage .left-column .checkbox-item label {
   display: block;
   position: relative;
   padding-left: 35px;
