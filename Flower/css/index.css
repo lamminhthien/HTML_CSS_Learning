@@ -12,6 +12,12 @@
   background-color: transparent;
   color: #000;
 }
+.homepage .pt-10px {
+  padding-top: 10px;
+}
+.homepage .mt-15px {
+  margin-top: 15px;
+}
 .homepage {
   font-family: 'Muli', serif;
 }
@@ -42,14 +48,9 @@
   font-size: 16px;
   line-height: 22px;
 }
-.homepage .list-link a, .homepage .list-link a:hover {
+.homepage .list-link a,
+.homepage .list-link a:hover {
   color: #ffff;
-}
-.homepage .pt-10px {
-  padding-top: 10px;
-}
-.homepage .mt-15px {
-  margin-top: 15px;
 }
 .homepage .title {
   font-size: 18px;
@@ -59,8 +60,7 @@
   line-height: 22px;
 }
 .homepage .flower-content-section {
-  margin-top: 45px;
-  margin-bottom: 45px;
+  margin: 45px 0px;
   display: flex;
   gap: 30px;
 }
@@ -88,8 +88,7 @@
 .homepage .left-column .title-secondary {
   font-size: 16px;
   font-weight: 600;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding: 15px 0 10px 0;
 }
 .homepage .left-column .checkbox-item label {
   display: block;
@@ -111,8 +110,8 @@
   height: 0;
   width: 0;
 }
-.homepage .left-column .checkbox-item input:checked~.checkmark {
-  background-color: #2196F3;
+.homepage .left-column .checkbox-item input:checked ~ .checkmark {
+  background-color: #c34795;
 }
 .homepage .left-column .checkbox-item .checkmark {
   position: absolute;
@@ -123,18 +122,14 @@
   border: 1px solid #ccc;
 }
 .homepage .left-column .checkbox-item .checkmark::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 4px;
   top: -1px;
   width: 5px;
   height: 10px;
   border: solid white;
-  border-top-width: medium;
-  border-right-width: medium;
-  border-bottom-width: medium;
-  border-left-width: medium;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -187,10 +182,7 @@
   margin-bottom: 20px;
 }
 .homepage .dropdown-menu {
-  padding-top: 10px;
-  padding-right: 16px;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding: 10px 16px 10px 10px;
   width: 200px;
   background-color: white;
   border: 1px solid #ccc;
@@ -201,7 +193,7 @@
   padding-bottom: 10px;
 }
 .homepage .arange-button .selected {
-  background: #C34795;
+  background: #c34795;
 }
 .homepage .arrange-button .number-of-product {
   display: flex;
@@ -215,20 +207,16 @@
 .homepage .arrange-button .arrange-vertical {
   display: flex;
   gap: 2px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 0px 12px;
   align-items: center;
-  background: #C34795;
+  background: #c34795;
 }
 .homepage .arrange-button .arrange-horizontal {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background: #C34795;
+  padding: 8px 12px;
+  background: #c34795;
 }
 .homepage .arrange-button-list .horizontal-line {
   background: white;
@@ -254,14 +242,13 @@
 }
 .homepage .flower-name p {
   font-size: 16px;
-  margin-top: 16px;
-  margin-bottom: 12px;
+  margin: 16px 0 12px 0;
 }
 .homepage .flower-rating .fa-star {
   color: #d6d6d6;
 }
 .homepage .flower-rating .fa-star.checked {
-  color: #FFC000;
+  color: #ffc000;
 }
 .homepage .flower-price {
   display: flex;
@@ -282,7 +269,7 @@
   text-decoration: line-through;
 }
 .homepage .pagination::after {
-  content: "";
+  content: '';
   clear: both;
 }
 .homepage .pagination {
@@ -294,9 +281,9 @@
   float: left;
   padding: 5px 10px;
   text-decoration: none;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
   margin: 0 4px;
-  background-color: #C34795;
+  background-color: #c34795;
   border-radius: 2px;
 }
 .homepage .pagination a.active {
@@ -310,7 +297,7 @@
   border-radius: 5px;
 }
 .homepage .page-number button {
-  background: #C34795;
+  background: #c34795;
   border: 0;
   border-radius: 4px;
   color: white;
@@ -323,7 +310,7 @@
     background: rgba(230, 28, 28, 0.671);
   }
   .homepage .left-column {
-    width: 30%
+    width: 30%;
   }
   .homepage .right-flower-list {
     width: 70%;
@@ -331,13 +318,13 @@
 }
 @media screen and (max-width: 1280px) {
   body {
-    background: rgba(172, 255, 47, 0.74)
+    background: rgba(172, 255, 47, 0.74);
   }
   .homepage .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .homepage .left-column {
-    width: 40%
+    width: 40%;
   }
   .homepage .dropdown-menu {
     width: 150px;
@@ -348,20 +335,15 @@
 }
 @media screen and (max-width: 1024px) {
   body {
-    background-color: rgba(173, 216, 230, 0.76)
+    background-color: rgba(173, 216, 230, 0.76);
   }
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+    padding: 0 20px 50px 20px;
     max-width: 1600px;
     margin: auto;
   }
   .homepage .heading-section {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px 20px 50px 20px;
   }
   .homepage .flower-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -371,7 +353,8 @@
   body {
     background-color: rgba(255, 255, 0, 0.692);
   }
-  .homepage .left-column, .homepage .dropdown-menu {
+  .homepage .left-column,
+  .homepage .dropdown-menu {
     display: none;
   }
   .homepage .right-flower-list {
@@ -396,12 +379,10 @@
     background-color: rgba(255, 166, 0, 0.712);
   }
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px
   }
   .homepage .heading-section {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px
   }
   .homepage .arrange-button .arrange-button-list {
     display: none;
