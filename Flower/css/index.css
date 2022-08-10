@@ -403,6 +403,9 @@
   .homepage .heading-section {
     padding: 40px 16px 50px 16px;
   }
+  .homepage .filter-and-sort {
+    font-size: 12px;
+  }
   .homepage .arrange-button .arrange-button-list {
     display: none;
   }
