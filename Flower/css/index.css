@@ -44,6 +44,11 @@
 .homepage .list-link a {
   color: #ffff;
   text-decoration: none;
+}.homepage a,.homepage a:active, .homepage a:focus, .homepage a:hover {
+  outline: 0;
+  text-decoration: none;
+  background-color: transparent;
+  color: #000;
 }
 .homepage .pt-20px {
   padding-top: 20px;
