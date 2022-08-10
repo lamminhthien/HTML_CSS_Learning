@@ -273,15 +273,29 @@ width: 5px;
 }
 .homepage .pagination {
   display: flex;
-  gap: 0.2rem;
+  gap: 0.3rem;
   justify-content: end;
 }
 .homepage .page-number {
+}
+.homepage .page-number button {
+	width: 30px;
+	height: 30px;
+	background: #C34795;
+	border: 0;
+  border-radius: 4px;
+	color: white;
 }
 
 @media screen and (max-width: 1536px) {
   body {
     background-color: red;
+  }
+  .homepage .left-column {
+    width: 30%
+  }
+  .homepage .right-flower-list {
+    width: 70%;
   }
 }
 
@@ -294,6 +308,12 @@ width: 5px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     /* gap: 2rem; */
   }
+  .homepage .left-column {
+    width: 40%
+  }
+  .homepage .right-flower-list {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -305,37 +325,65 @@ width: 5px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     /* gap: 2rem; */
   }
-  .homepage .left-column {
-    width: 40%
-  }
-  .homepage .right-flower-list {
-    width: 60%;
-  }
 }
 @media screen and (max-width: 768px) {
   body {
     background-color: yellow;
   }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1600px;
+    margin: auto;
+    /* position: relative; */
+  }
   .homepage .heading-section {
     padding-top: 30px;
     padding-bottom: 50px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .homepage .left-column {
+    display: none;
+  }
+  .homepage .dropdown-menu {
     display: none;
   }
   .homepage .right-flower-list {
     width: 100%;
   }
+  .homepage .flower-list {
+    /* display: grid; */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+  .homepage .flower-name p {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .homepage .flower-price {
+    font-size: 15px;
+  }
+  
 }
 @media screen and (max-width: 640px) {
   body {
     background-color: orange;
   }
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .homepage .heading-section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .homepage .flower-list {
+    /* display: grid; */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 }
 
