@@ -187,6 +187,16 @@
   background-color: white;
   border: 1px solid #ccc;
 }
+.homepage .filter-and-sort {
+  display: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: #c34795;
+  color: white;
+  font-weight: 600;
+  border: 0;
+  border-radius: 4px;
+}
 .homepage .arrange-button {
   display: flex;
   gap: 2.2rem;
@@ -326,9 +336,6 @@
   .homepage .left-column {
     width: 40%;
   }
-  .homepage .dropdown-menu {
-    width: 150px;
-  }
   .homepage .right-flower-list {
     width: 60%;
   }
@@ -342,27 +349,30 @@
     max-width: 1600px;
     margin: auto;
   }
+  .homepage .right-flower-list {
+    width: 100%;
+  }
+  .homepage .left-column,
+  .homepage .dropdown-menu {
+    display: none;
+  }
+  .homepage .filter-and-sort {
+    display: block;
+  }
   .homepage .heading-section {
     padding: 30px 20px 50px 20px;
   }
   .homepage .flower-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @media screen and (max-width: 768px) {
   body {
     background-color: rgba(255, 255, 0, 0.692);
   }
-  .homepage .left-column,
-  .homepage .dropdown-menu {
-    display: none;
-  }
-  .homepage .right-flower-list {
-    width: 100%;
-  }
   .homepage .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.2rem;
+    gap: 20px;
   }
   .homepage .flower-name p {
     font-size: 15px;
@@ -379,10 +389,10 @@
     background-color: rgba(255, 166, 0, 0.712);
   }
   .container {
-    padding: 0 16px
+    padding: 0 16px;
   }
   .homepage .heading-section {
-    padding: 0 16px
+    padding: 0 16px;
   }
   .homepage .arrange-button .arrange-button-list {
     display: none;
