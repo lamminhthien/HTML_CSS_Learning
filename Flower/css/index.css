@@ -72,7 +72,7 @@
   gap: 30px;
 }
 .homepage .left-column {
-  width: 20%;
+  width: 18%;
 }
 .homepage .left-column .list-box {
   border: 1px solid #ccc;
@@ -97,7 +97,7 @@
 }
 .homepage .left-column .title-main {
   /* background: rgba(224, 50, 50, 0.185); */
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   padding: 20px 0 10px 0;
   border-bottom: 1px solid #ccc;
@@ -119,6 +119,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: gray;
   /* background: #0ee6b086; */
 }
 .homepage .left-column .checkbox-item input {
@@ -236,6 +237,9 @@ width: 5px;
   display: flex;
   gap: 2.2rem;
   padding-bottom: 10px;
+}
+.homepage .arange-button .selected {
+  background: #C34795;
 }
 .homepage .arrange-button .number-of-product {
   display: flex;
@@ -363,9 +367,9 @@ width: 5px;
   display: block;
 }
 
-@media screen and (min-width: 1536px) {
+@media screen and (max-width: 1536px) {
   body {
-    /* background: rgba(230, 28, 28, 0.671); */
+    background: rgba(230, 28, 28, 0.671);
   }
   .homepage .left-column {
     width: 30%
