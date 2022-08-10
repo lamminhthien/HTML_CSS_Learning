@@ -1,6 +1,7 @@
 .container {
   padding-left: 100px;
   padding-right: 100px;
+  padding-bottom: 80px;
   max-width: 1600px;
   margin: auto;
   /* position: relative; */
@@ -66,7 +67,7 @@
 }
 .homepage .flower-content-section {
   margin-top: 45px;
-  margin-bottom: 66px;
+  margin-bottom: 45px;
   display: flex;
   gap: 30px;
 }
@@ -182,9 +183,16 @@ width: 5px;
   align-items: center;
   gap: 5px;
 }
+.homepage .price .price-box label {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+}
 .homepage .price .price-box input {
-  height: 40px;
   width: 100%;
+  padding: 8px 8px 20px 8px ;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 .homepage .product-type {
 }
@@ -394,6 +402,7 @@ width: 5px;
   .container {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 50px;
     max-width: 1600px;
     margin: auto;
     /* position: relative; */
