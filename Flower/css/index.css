@@ -213,7 +213,7 @@ width: 5px;
   padding-bottom: 10px;
   width: 200px;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #ccc;
 }
 .homepage .sort-button {
 }
@@ -289,7 +289,7 @@ width: 5px;
 
 @media screen and (max-width: 1536px) {
   body {
-    background-color: red;
+    background: rgba(230, 28, 28, 0.671);
   }
   .homepage .left-column {
     width: 30%
@@ -301,7 +301,7 @@ width: 5px;
 
 @media screen and (max-width: 1280px) {
   body {
-    background:  green;
+    background:  rgba(172, 255, 47, 0.74)
   }
   .homepage .flower-list {
     /* display: grid; */
@@ -318,7 +318,7 @@ width: 5px;
 
 @media screen and (max-width: 1024px) {
   body {
-    background-color: blue
+    background-color: rgba(173, 216, 230, 0.76)
   }
   .homepage .flower-list {
     /* display: grid; */
@@ -328,7 +328,7 @@ width: 5px;
 }
 @media screen and (max-width: 768px) {
   body {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.692);
   }
   .container {
     padding-left: 20px;
@@ -370,7 +370,7 @@ width: 5px;
 }
 @media screen and (max-width: 640px) {
   body {
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.712);
   }
   .container {
     padding-left: 16px;
