@@ -33,7 +33,7 @@
 .homepage .heading-section h1 {
   font-family: 'Lora', serif;
 }
-.homepage .background img {
+.homepage .heading-section .background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -44,18 +44,18 @@
   left: 0;
   filter: contrast(80%) brightness(50%);
 }
-.homepage .list-link {
+.homepage .heading-section .list-link {
   font-size: 16px;
   line-height: 22px;
 }
-.homepage .list-link a,
-.homepage .list-link a:hover {
+.homepage .heading-section .list-link a,
+.homepage .heading-section .list-link a:hover {
   color: #ffff;
 }
-.homepage .title {
+.homepage .heading-section .title {
   font-size: 18px;
 }
-.homepage .description {
+.homepage .heading-section .description {
   font-size: 16px;
   line-height: 24px;
 }
@@ -66,18 +66,6 @@
 }
 .homepage .left-column {
   width: 18%;
-}
-.homepage .left-column .list-box {
-  border: 1px solid #ccc;
-  margin-bottom: 30px;
-  padding: 0 20px 30px 20px;
-}
-.homepage .left-column .category-list {
-  margin-top: 5px;
-}
-.homepage .left-column .category-item {
-  display: flex;
-  justify-content: space-between;
 }
 .homepage .left-column .title-main {
   font-size: 14px;
@@ -134,60 +122,73 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.homepage .left-column .category .list-box {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding: 0 20px 30px 20px;
+}
+.homepage .left-column .category .category-list {
+  margin-top: 5px;
+}
+.homepage .left-column .category .category-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .homepage .category-item {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
 }
-.homepage .price .price-range {
+.homepage .filter-by .price .price-range {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
-.homepage .price .price-box {
+.homepage .filter-by .price .price-box {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.homepage .price .price-box label {
+.homepage .filter-by .price .price-box label {
   color: #666666;
   font-size: 18px;
   font-weight: 500;
 }
-.homepage .price .price-box input {
+.homepage .filter-by .price .price-box input {
   width: 100%;
   padding: 8px 8px 20px 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.homepage .color .color-list {
+.homepage .filter-by .color .color-list {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   padding-top: 10px;
   gap: 1rem;
 }
-.homepage .color .color-item {
+.homepage .filter-by .color .color-item {
   height: 2.25rem;
   width: 2.25rem;
   border-radius: 100%;
   border: 1px solid rgba(128, 128, 128, 0.589);
 }
-.homepage .right-flower-list {
+.homepage .right-column {
   width: 80%;
 }
-.homepage .filter-product {
+.homepage .right-column .filter-product {
   display: flex;
   justify-content: space-between;
   height: 45px;
   margin-bottom: 20px;
 }
-.homepage .dropdown-menu {
+.homepage .right-column .filter-product .dropdown-menu {
   padding: 10px 16px 10px 10px;
   width: 200px;
   background-color: white;
   border: 1px solid #ccc;
 }
-.homepage .filter-and-sort {
+.homepage .right-column .filter-product .filter-and-sort {
   display: none;
   cursor: pointer;
   padding: 10px 15px;
@@ -197,70 +198,70 @@
   border: 0;
   border-radius: 4px;
 }
-.homepage .arrange-button {
+.homepage .right-column .filter-product .arrange-button {
   display: flex;
   gap: 2.2rem;
   padding-bottom: 10px;
 }
-.homepage .arange-button .selected {
+.homepage .right-column .filter-product .arange-button .selected {
   background: #c34795;
 }
-.homepage .arrange-button .number-of-product {
+.homepage .right-column .filter-product .arrange-button .number-of-product {
   display: flex;
   align-items: center;
   color: #666666;
 }
-.homepage .arrange-button .arrange-button-list {
+.homepage .right-column .filter-product .arrange-button .arrange-button-list {
   display: flex;
   gap: 2px;
 }
-.homepage .arrange-button .arrange-vertical {
+.homepage .right-column .filter-product .arrange-button .arrange-vertical {
   display: flex;
   gap: 2px;
   padding: 0px 12px;
   align-items: center;
   background: #c34795;
 }
-.homepage .arrange-button .arrange-horizontal {
+.homepage .right-column .filter-product .arrange-button .arrange-horizontal {
   display: flex;
   flex-direction: column;
   gap: 2px;
   padding: 8px 12px;
   background: #c34795;
 }
-.homepage .arrange-button-list .horizontal-line {
+.homepage .right-column .filter-product .arrange-button-list .horizontal-line {
   background: white;
   height: 16px;
   width: 1px;
 }
-.homepage .arrange-button-list .vertical-line {
+.homepage .right-column .filter-product .arrange-button-list .vertical-line {
   background: white;
   height: 1px;
   width: 16px;
 }
-.homepage .flower-list {
+.homepage .right-column .flower-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
 }
-.homepage .flower-item {
+.homepage .right-column .flower-list .flower-item {
   text-align: center;
 }
-.homepage .flower-thumbnail img {
+.homepage .right-column .flower-list .flower-thumbnail img {
   height: auto;
   max-width: 100%;
 }
-.homepage .flower-name p {
+.homepage .right-column .flower-list .flower-name p {
   font-size: 16px;
   margin: 16px 0 12px 0;
 }
-.homepage .flower-rating .fa-star {
+.homepage .right-column .flower-list .flower-rating .fa-star {
   color: #d6d6d6;
 }
-.homepage .flower-rating .fa-star.checked {
+.homepage .right-column .flower-list .flower-rating .fa-star.checked {
   color: #ffc000;
 }
-.homepage .flower-price {
+.homepage .right-column .flower-list .flower-price {
   display: flex;
   font-size: 18px;
   font-weight: 500;
@@ -268,14 +269,14 @@
   justify-content: center;
   gap: 1rem;
 }
-.homepage .flower-price p {
+.homepage .right-column .flower-list .flower-price p {
   margin-top: 12px;
 }
-.homepage .original-price {
+.homepage .right-column .flower-list .original-price {
   color: #c34795;
   font-weight: 600;
 }
-.homepage .discount-price {
+.homepage .right-column .flower-list .discount-price {
   text-decoration: line-through;
 }
 .homepage .pagination::after {
@@ -306,13 +307,13 @@
   background-color: #ddd;
   border-radius: 5px;
 }
-.homepage .page-number button {
+.homepage .pagination .page-number button {
   background: #c34795;
   border: 0;
   border-radius: 4px;
   color: white;
 }
-.homepage .page-number button a {
+.homepage .pagination .page-number button a {
   display: block;
 }
 @media screen and (max-width: 1536px) {
@@ -322,7 +323,7 @@
   .homepage .left-column {
     width: 30%;
   }
-  .homepage .right-flower-list {
+  .homepage .right-column {
     width: 70%;
   }
 }
@@ -330,13 +331,13 @@
   body {
     background: rgba(172, 255, 47, 0.74);
   }
-  .homepage .flower-list {
+  .homepage .right-column .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .homepage .left-column {
     width: 40%;
   }
-  .homepage .right-flower-list {
+  .homepage .right-column {
     width: 60%;
   }
 }
@@ -349,20 +350,20 @@
     max-width: 1600px;
     margin: auto;
   }
-  .homepage .right-flower-list {
+  .homepage .right-column {
     width: 100%;
   }
   .homepage .left-column,
-  .homepage .dropdown-menu {
+  .homepage .right-column .filter-product .dropdown-menu {
     display: none;
   }
-  .homepage .filter-and-sort {
+  .homepage .right-column .filter-product .filter-and-sort {
     display: block;
   }
   .homepage .heading-section {
     padding: 30px 140px 50px 140px;
   }
-  .homepage .flower-list {
+  .homepage .right-column .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -370,17 +371,17 @@
   body {
     background-color: rgba(255, 255, 0, 0.692);
   }
-  .homepage .flower-list {
+  .homepage .right-column .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
   }
-  .homepage .flower-name p {
+  .homepage .right-column .flower-list .flower-name p {
     font-size: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .homepage .flower-price {
+  .homepage .right-column .flower-list .flower-price {
     font-size: 15px;
   }
 }
@@ -394,10 +395,10 @@
   .homepage .heading-section {
     padding: 40px 16px 50px 16px;
   }
-  .homepage .arrange-button .arrange-button-list {
+  .homepage .right-column .filter-product .arrange-button .arrange-button-list {
     display: none;
   }
-  .homepage .flower-list {
+  .homepage .right-column .flower-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
