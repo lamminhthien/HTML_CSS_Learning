@@ -172,6 +172,14 @@
   border-radius: 100%;
   border: 1px solid rgba(128, 128, 128, 0.589);
 }
+.homepage .ads {
+  margin-top: 30px;
+}
+.homepage .ads img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 4px;
+}
 .homepage .right-flower-list {
   width: 80%;
 }
@@ -295,6 +303,7 @@
 .homepage .pagination {
   display: block;
   float: right;
+  margin-bottom: 90px;
 }
 .homepage .pagination a {
   color: white;
@@ -309,12 +318,14 @@
 .homepage .pagination a.active {
   background-color: black;
 }
-.homepage .pagination a:hover:not(.active) {
-  background-color: #ddd;
+.homepage .pagination a:hover.active {
+  background-color: rgb(88, 85, 85);
 }
 .homepage .pagination a:hover:not(.active) {
-  background-color: #ddd;
-  border-radius: 5px;
+  background-color: #df7ebb;
+}
+.homepage .pagination a:hover:not(.active) {
+  background-color: #df7ebb;
 }
 .homepage .page-number button {
   background: #c34795;
@@ -374,6 +385,9 @@
   }
   .homepage .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .homepage .pagination {
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 768px) {
