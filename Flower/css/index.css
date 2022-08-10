@@ -202,39 +202,48 @@
   gap: 2.2rem;
   padding-bottom: 10px;
 }
-.homepage .arange-button .selected {
-  background: #c34795;
-}
 .homepage .arrange-button .number-of-product {
   display: flex;
   align-items: center;
   color: #666666;
 }
+.homepage .arrange-button .arrange-vertical.selected {
+  background: #c34795;
+}
+.homepage .arrange-button .arrange-horizontal.selected {
+  background: #c34795;
+}
+.homepage .arrange-vertical.selected .vertical-line {
+  background: white;
+}
+.homepage .arrange-horizontal.selected .horizontal-line {
+  background: white;
+}
 .homepage .arrange-button .arrange-button-list {
   display: flex;
-  gap: 2px;
+  gap: 4px;
 }
 .homepage .arrange-button .arrange-vertical {
   display: flex;
   gap: 2px;
   padding: 0px 12px;
   align-items: center;
-  background: #c34795;
+  background: #ccc;
 }
 .homepage .arrange-button .arrange-horizontal {
   display: flex;
   flex-direction: column;
   gap: 2px;
   padding: 8px 12px;
-  background: #c34795;
+  background: #ccc;
 }
-.homepage .arrange-button-list .horizontal-line {
-  background: white;
+.homepage .arrange-button-list .vertical-line {
+  background: black;
   height: 16px;
   width: 1px;
 }
-.homepage .arrange-button-list .vertical-line {
-  background: white;
+.homepage .arrange-button-list .horizontal-line {
+  background: black;
   height: 1px;
   width: 16px;
 }
