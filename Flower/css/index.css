@@ -1,4 +1,4 @@
-.container {
+.homepage .container {
   padding: 0px 100px 80px 100px;
   max-width: 1600px;
   margin: auto;
@@ -240,13 +240,13 @@
 }
 .homepage .arrange-button-list .vertical-line {
   background: black;
-  height: 16px;
-  width: 1px;
+  height: 12px;
+  width: 2px;
 }
 .homepage .arrange-button-list .horizontal-line {
   background: black;
-  height: 1px;
-  width: 16px;
+  height: 2px;
+  width: 12px;
 }
 .homepage .flower-list {
   display: grid;
@@ -354,7 +354,7 @@
   body {
     background-color: rgba(173, 216, 230, 0.76);
   }
-  .container {
+  .homepage .container {
     padding: 0 20px 50px 20px;
     max-width: 1600px;
     margin: auto;
@@ -398,7 +398,7 @@
   body {
     background-color: rgba(255, 166, 0, 0.712);
   }
-  .container {
+  .homepage .container {
     padding: 0 16px;
   }
   .homepage .heading-section {
