@@ -207,24 +207,60 @@ width: 5px;
 .homepage .filter-product {
   display: flex;
   justify-content: space-between;
+  height: 40px;
 }
 .homepage .dropdown-menu {
-  margin-bottom: 20px;
-}
-.homepage .dropdown-menu select {
   padding-top: 10px;
   padding-right: 16px;
   padding-left: 10px;
   padding-bottom: 10px;
   width: 200px;
+  /* height: 40px; */
   background-color: white;
   border: 1px solid #ccc;
 }
-.homepage .sort-button {
+.homepage .arrange-button {
+  display: flex;
+  gap: 2.2rem;
+  padding-bottom: 10px;
 }
-.homepage .number-of-product {
+.homepage .arrange-button .number-of-product {
+  display: flex;
+  align-items: center;
 }
-.homepage .sort-buttons {
+.homepage .arrange-button .arrange-button-list {
+  display: flex;
+  gap: 2px;
+}
+.homepage .arrange-button .arrange-vertical {
+  display: flex;
+  gap: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+  /* padding-top: 8px;
+  padding-bottom: 8px; */
+  align-items: center;
+  background: #C34795;
+}
+.homepage .arrange-button .arrange-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #C34795;
+}
+.homepage .arrange-button-list .horizontal-line {
+ background: white;
+ height: 16px;
+ width: 1px;
+}
+.homepage .arrange-button-list .vertical-line {
+  background: white;
+  height: 1px;
+  width: 16px;
 }
 .homepage .increasing {
 }
