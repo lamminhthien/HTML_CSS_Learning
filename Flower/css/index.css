@@ -337,9 +337,6 @@
   display: block;
 }
 @media screen and (max-width: 1536px) {
-  body {
-    background: rgba(230, 28, 28, 0.671);
-  }
   .homepage .left-column {
     width: 30%;
   }
@@ -348,9 +345,6 @@
   }
 }
 @media screen and (max-width: 1280px) {
-  body {
-    background: rgba(172, 255, 47, 0.74);
-  }
   .homepage .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -362,9 +356,6 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  body {
-    background-color: rgba(173, 216, 230, 0.76);
-  }
   .homepage .container {
     padding: 0 20px 50px 20px;
     max-width: 1600px;
@@ -391,9 +382,6 @@
   }
 }
 @media screen and (max-width: 768px) {
-  body {
-    background-color: rgba(255, 255, 0, 0.692);
-  }
   .homepage .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
@@ -409,9 +397,6 @@
   }
 }
 @media screen and (max-width: 640px) {
-  body {
-    background-color: rgba(255, 166, 0, 0.712);
-  }
   .homepage .container {
     padding: 0 16px;
   }
