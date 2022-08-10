@@ -9,31 +9,34 @@
   font-family: 'Muli', serif;
 }
 .homepage .heading-section {
-  /* background: rgba(33, 47, 55, 0.518); */
-  background-image: url('../image/heading-background-image.jpg');
-  background-position: center center;
-  background-size: cover;
   /* height:100vh; */
-  font-family: 'Lora', serif;
   text-align: center;
   color: white;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 60px;
+  padding-bottom: 70px;
   max-width: 1600px;
   margin: auto;
+  position: relative;
+  z-index: 1;
+}
+.homepage .heading-section h1 {
+  font-family: 'Lora', serif;
 }
 .homepage .background {
 }
-/* .homepage .background img {
+.homepage .background img {
   width: 100%;
-  height: inherit;
+  height: 100%;
   object-fit: cover;
   object-position: bottom;
   position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
-} */
+  filter: contrast(80%) brightness(50%);
+}
 .homepage .list-link {
   font-size: 16px;
   line-height: 22px;
@@ -275,3 +278,64 @@ width: 5px;
 }
 .homepage .page-number {
 }
+
+@media screen and (max-width: 1536px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    background:  green;
+  }
+  .homepage .flower-list {
+    /* display: grid; */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* gap: 2rem; */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: blue
+  }
+  .homepage .flower-list {
+    /* display: grid; */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* gap: 2rem; */
+  }
+  .homepage .left-column {
+    width: 40%
+  }
+  .homepage .right-flower-list {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+  .homepage .heading-section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .homepage .left-column {
+    display: none;
+  }
+  .homepage .right-flower-list {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    background-color: orange;
+  }
+  .homepage .heading-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
