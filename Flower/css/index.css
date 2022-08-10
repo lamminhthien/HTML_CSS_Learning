@@ -57,7 +57,7 @@
 }
 .homepage .description {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
 }
 .homepage .flower-content-section {
   margin: 45px 0px;
@@ -360,7 +360,7 @@
     display: block;
   }
   .homepage .heading-section {
-    padding: 30px 20px 50px 20px;
+    padding: 30px 140px 50px 140px;
   }
   .homepage .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -392,7 +392,7 @@
     padding: 0 16px;
   }
   .homepage .heading-section {
-    padding: 0 16px;
+    padding: 40px 16px 50px 16px;
   }
   .homepage .arrange-button .arrange-button-list {
     display: none;
