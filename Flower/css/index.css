@@ -284,12 +284,15 @@ width: 5px;
 .homepage .page-number {
 }
 .homepage .page-number button {
-	width: 30px;
-	height: 30px;
+	/* width: 30px; */
+	/* height: 30px; */
 	background: #C34795;
 	border: 0;
   border-radius: 4px;
 	color: white;
+}
+.homepage .page-number button a {
+  display: block;
 }
 
 @media screen and (max-width: 1536px) {
