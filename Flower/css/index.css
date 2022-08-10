@@ -232,6 +232,7 @@
 }
 .homepage .arrange-button .arrange-horizontal {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 2px;
   padding: 8px 12px;
