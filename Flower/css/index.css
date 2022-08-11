@@ -134,7 +134,6 @@
 .homepage .category-item {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
 }
 .homepage .price .price-range {
   display: grid;
