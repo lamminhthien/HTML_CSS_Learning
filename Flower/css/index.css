@@ -341,11 +341,23 @@
   display: block;
 }
 @media screen and (max-width: 1536px) {
+  .homepage .left-column {
+    width: 25%;
+  }
+  .homepage .right-flower-list {
+    width: 75%;
+  }
   .homepage .flower-thumbnail {
     height: 230px;
   }
 }
 @media screen and (max-width: 1280px) {
+  .homepage .left-column {
+    width: 30%;
+  }
+  .homepage .right-flower-list {
+    width: 70%;
+  }
   .homepage .flower-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
