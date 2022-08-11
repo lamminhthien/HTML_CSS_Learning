@@ -4,12 +4,9 @@
   margin: auto;
 }
 .homepage a,
-.homepage a:active,
-.homepage a:focus,
 .homepage a:hover {
   outline: 0;
   text-decoration: none;
-  background-color: transparent;
   color: #000;
 }
 .homepage .pt-10px {
@@ -342,14 +339,8 @@
   display: block;
 }
 @media screen and (max-width: 1536px) {
-  .homepage .left-column {
-    width: 25%;
-  }
   .homepage .flower-thumbnail {
     height: 230px;
-  }
-  .homepage .right-flower-list {
-    width: 75%;
   }
 }
 @media screen and (max-width: 1280px) {
